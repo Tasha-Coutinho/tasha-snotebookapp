@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+  padding-top: 4%;
+  padding-left: 10%;
+  z-index: 1;
+}
+
+/* Background Video */
+video#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Heading */
+.container h1 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.container h1 img {
+  width: 60px;
+}
+
+/* Button */
+.container button {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#9418fd, #571094);
+  color: #fff;
+  font-size: 16px;
+  outline: 0;
+  border: 0;
+  border-radius: 40px;
+  padding: 15px 25px;
+  margin: 30px 0 20px;
+  cursor: pointer;
+}
+
+.container button img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+/* Notes Container */
+.notes-container {
+  z-index: 2;
+}
+
+
+.input-box {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  color: #333;
+  padding: 20px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.input-box img {
+  width: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 570px) {
+  .container {
+    padding-left: 5%;
+  }
+
+  .input-box {
+    width: 80%;
+    max-width: none;
+    margin: 20px auto;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
